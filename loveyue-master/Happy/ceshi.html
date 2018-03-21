@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year</title>
+    <!-- 打字机效果-->
+    <script type="text/javascript" src="text1.js"></script>
+    <!-- 显示时间 -->
+    <script type="text/javascript" src="time.js"></script>
+    <!-- 画爱心-->
+    <script type="text/javascript" src="ga.js" async=""></script>
+    <script type="text/javascript" src="heart.js"></script>
+   <style>
+       .div{
+           margin-top:100px;
+           padding-left:100px;
+       }
+       #time{
+           float:right;
+           border:1px solid red;
+       }
+       #myContent{
+           height:20px;
+       }
+   </style>
+
+</head>
+<script type="text/javascript">
+    setTimeout(makesnake, 4200);
+</script>
+<body>
+
+<div class="div">
+<div id="myContent">
+    <span id="blink" style="display: none;">_</span></div>
+
+
+<div id="contentToWrite" style="display:none">
+
+    右下角的计时器,将永远继续下去,直至数据溢出.<br>
+    <br>
+    --Just for You, Yue<br>
+</div>
+    <div></div>
+    <div id="time">
+        <span id="show"></span>
+        <script type="text/javascript">
+            setTimeout("showTime()", 40000);
+        </script>
+    </div>
+</div>
+<script type="text/javascript">
+    writeContent(true);
+</script>
+</body>
+</html>
