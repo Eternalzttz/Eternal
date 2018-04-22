@@ -1,0 +1,139 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width =device-width,initial-scale =1,user-scalable = 2">
+    <title>Happy Birthday</title>
+    <link href="in.css" type="text/css" rel="stylesheet">
+</head>
+<body onload = init()>
+<div class = "in_div"  id="in_div">
+    <div class = "bigone" id = "bigone">
+    <div class = "img_div" id = "img_div">
+        <img src="cake2.jpeg" id = "img">
+    </div>
+    </div>
+
+    <div class = "fixed1"></div>
+    <div class = "fixed21"></div><div class = "fixed22"></div>
+    <div class = "fixed23"></div><div class = "fixed24"></div>
+    <div class = "fixed25"></div><div class = "fixed26"></div>
+    <div class = "fixed3"></div>
+    <div class = "fixed41">!</div><div class = "fixed42">y</div>
+    <div class = "fixed43">p</div><div class = "fixed44">p</div>
+    <div class = "fixed45">a</div><div class = "fixed46">H</div>
+
+
+    <div class = "block1" id = "block1"></div>
+    <div class = "block2" id = "block2"></div>
+    <div class = "block3" id = "block3"></div>
+    <div class = "block4" id = "block4"></div>
+    <div class = "block5" id = "block5"></div>
+    <div class = "block6" id = "block6"></div>
+    <div class = "block7" id = "block7"></div>
+    <div class = "block8" id = "block8"></div>
+
+   <div class = "left" id = "left">
+       <div class = "word1" id = "word1">Hello!</div>
+       <div class = "word2" id = "word2">好久不见啦</div>
+       <div class = "word3" id = "word3">也不知道最近过得咋样</div>
+       <div class = "word4" id = "word4">嘛  今天是4.23号</div>
+       <div class = "word5" id = "word5">特殊的日子</div>
+       <div class = "word6" id = "word6">生日快乐哈</div>
+
+
+    </div>
+    <div class = "right" id = "right">
+        <div class = "word7" id = "word7">希望你明年此时</div>
+        <div class = "word8" id = "word8">后年此时</div>
+        <div class = "word9" id = "word9">······N年此时</div>
+        <div class = "word10" id = "word10">每一年的今天</div>
+        <div class = "word11" id = "word11">都可以开开心心的</div>
+        <div class = "word12" id = "word12">生日快乐！</div>
+        <div>----------YS</div>
+    </div>
+
+</div>
+<div class="out_div" id = "out">
+    <script src = "star.js"></script>
+    <script src = "commonFunctions.js"></script>
+    <script src = "starSan.js"></script>
+    <canvas id = "canvas" width="380" height = "320"></canvas>
+<div class = "cake4" id ="cakediv">
+    <img src="cake423.jpg" class = "cake41" id = "cake41">
+</div>
+   <div class = "audio_div">
+       <div class = "name">To zxy:</div>
+       <div class = "happy" id = "happy">
+           <font color=red>H</font><font color=orange>a</font><font color=yellow>p</font><font color=green>p</font><font color=#90ee90>y </font><font color=#00bfff>B</font><font color=#9370db>i</font><font color=#00bfff>r</font><font color=green>t</font><font color=#90ee90>h</font><font color=yellow>d</font><font color=orange>a</font><font color=red>y !</font>
+       </div>
+    <audio controls id = "audio">
+        <source src="Demo.mp3" type="audio/mpeg">
+    </audio>
+
+   </div>
+    <div class = "speak" id = "speak">
+        <div class = "speak1">祝钟小月同学</div>
+        <div class = "speak2">生日快乐！ (*•̀ᴗ•́*)و </div>
+        <div class = "end"><a href = end.html>END</a></div>
+
+    </div>
+</div>
+
+<script>
+    var start = 0;
+    var temp =0;
+    var word1 =  document.getElementById("word1");
+    var word2 =  document.getElementById("word2");
+    var word3 =  document.getElementById("word3");
+    var word4 =  document.getElementById("word4");
+    var word5 =  document.getElementById("word5");
+    var word6 =  document.getElementById("word6");
+    var word7 =  document.getElementById("word7");
+    var word8 =  document.getElementById("word8");
+    var word9 =  document.getElementById("word9");
+    var word10 =  document.getElementById("word10");
+    var word11 =  document.getElementById("word11");
+    var word12 =  document.getElementById("word12");
+    var indiv= document.getElementById("in_div");
+    var outdiv =document.getElementById("out");
+    var happy = document.getElementById("happy");
+    var left = document.getElementById("left");
+    var right =document.getElementById("right");
+    var div = document.getElementById("bigone");
+    var img =  document.getElementById("img");
+
+    div.onclick = function() {
+
+        if (temp === 0) {
+            left.style.cssText = "animation:left1 3s; animation-fill-mode:forwards;animation-delay:1.2s;";
+            right.style.cssText = "animation:right1 3s; animation-fill-mode:forwards ;animation-delay:1.2s;";
+            word1.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;";
+            word2.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:5s";
+            word3.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:7.5s";
+            word4.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:10s";
+            word5.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:12.5s";
+            word6.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:15s";
+            word7.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:17.5s";
+            word8.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:20s";
+            word9.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:22.5s";
+            word10.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:25s";
+            word11.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:27.5s";
+            word12.style.cssText= "animation:word1 2.5s; animation-fill-mode:forwards;animation-delay:30s";
+            div.style.cssText = " animation:divmove 5s;  animation-fill-mode: forwards;";
+            temp=1;
+        }
+        else if((temp===1)&&div.offsetTop>=450){
+            left.style.cssText = "animation:left2 3s; animation-fill-mode:forwards";
+            right.style.cssText = "animation:right2 3s; animation-fill-mode:forwards ;";
+            div.style.cssText = " animation:outmove 4s; animation-fill-mode: forwards;";
+            indiv.style.cssText = " animation:out_div 5s;  animation-fill-mode: forwards;animation-delay:4.5s";
+            outdiv.style.cssText = " animation:out1 5s;  animation-fill-mode: forwards;animation-delay:4s;";
+            happy.style.cssText = " animation:appear1 3s;  animation-fill-mode: forwards;animation-delay:4s";
+            start = 1;
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+
+body{
+    height: 680px;
+    width:100%;
+    background: lightpink;
+}
+.in_div{
+    position: absolute;  margin-top:-10px;  margin-left:0px;  width:360px;  height:680px;
+    background: lightpink;  border:1px solid lightpink;  animation: in_div 2s;
+}
+@-webkit-keyframes out_div { from{opacity: 1} to{opacity: 0} }
+.in_div .img_div{
+    margin: 0px  auto 0px;  width:80px;  height:80px;  border-radius: 40px;  z-index: 9;
+}
+.img_div img{
+    position: relative;  width:100%;  height:100%;  border-radius: 40px;  z-index: 9;
+}
+.fixed1{  position: absolute;  width:80px;  height:65px;  left:10px;  top:-22px;
+    transform: rotate(45deg);  background: white;  opacity:0.6;  }
+.fixed21{  position: absolute;  width:120px;  height:18px;  right:0px;  top:100px;
+    background: white;  opacity:0.6;  }
+.fixed22{  position: absolute;  width:120px;  height:18px;  right:0px;  top:130px;
+      background: white;  opacity:0.6;  }
+.fixed23{  position: absolute;  width:120px;  height:18px;  right:0px;  top:160px;
+      background: white;  opacity:0.6;  }
+.fixed24{  position: absolute;  width:120px;  height:18px;  right:0px;  top:190px;
+   background: white;  opacity:0.6;  }
+.fixed25{  position: absolute;  width:120px;  height:18px;  right:0px;  top:220px;
+     background: white;  opacity:0.6;  }
+.fixed26{  position: absolute;  width:120px;  height:18px;  right:0px;  top:250px;
+    background: white;  opacity:0.6;  }
+
+.fixed3{  position: absolute;  width:80px;  height:65px;  left:-30px;  bottom:200px;
+    transform: rotate(-45deg);  background: white;  opacity:0.5;  }
+
+.fixed41{  position: absolute;  width:18px;  height:50px;  right:20px;  bottom:0px;text-align: center;
+    background: white;  opacity:0.6;  padding-top: 20px ;color:red}
+.fixed42{  position: absolute;  width:18px;   height:50px;  right:50px;  bottom:0px;text-align: center;
+    background: white;  opacity:0.6;  padding-top:20px ;color:orange}
+.fixed43{  position: absolute;  width:18px;   height:50px;   right:80px;  bottom:0px;text-align: center;
+    background: white;  opacity:0.6; padding-top:20px ;color:yellow }
+.fixed44{  position: absolute; width:18px;   height:50px; right:110px;  bottom:0px;text-align: center;
+    background: white;  opacity:0.6; padding-top:20px ;color:green}
+.fixed45{  position: absolute;  width:18px;   height:50px;   right:140px;  bottom:0px;text-align: center;
+    background: white;  opacity:0.6; padding-top:20px ;color:lightgreen}
+.fixed46{  position: absolute;  width:18px;  height:50px;   right:170px;  bottom:0px;text-align: center;
+    background: white;  opacity:0.6; padding-top:20px ;color:blue}
+
+
+
+
+
+
+
+
+
+
+
+
+.block1{ text-align: center;
+
+
+
+    background: white;  position: absolute;  height:10px;  width:10px;
+    left:20px;  top:700px;  animation: float1 15s;  opacity: 0;  transform: rotate(0deg);
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes float1 {
+    0%{ height:10px;  width:10px;  top:600px;  opacity: 0;  transform: rotate(0deg);  }
+    25%{  opacity: 0.8;  }
+    100%{ height:60px;  width:60px;  top:0px;  opacity: 0;  transform: rotate(330deg);  }
+}
+
+.block3{  background: white;  position: absolute;  height:10px;  width:10px;  left:150px;
+    top:750px;  animation: float3 15s;  animation-delay: 2s;  opacity: 0;  transform: rotate(0deg);
+    animation-iteration-count: infinite;text-align: center;
+}
+@-webkit-keyframes float3 {
+    0%{ height:10px;  width:10px;  top:650px;  opacity: 0;  transform: rotate(0deg);}
+    25%{  opacity: 0.7;  }
+    100%{ height:60px;  width:60px;  top:0px;  opacity: 0;  transform: rotate(330deg); }
+}
+
+.block4{  background: white;  position: absolute;  height:10px;  width:10px;  left:260px;
+    top:720px;  animation: float4 15s;  opacity: 0;  animation-delay: 1s;  transform: rotate(0deg);
+    animation-iteration-count: infinite;text-align: center;
+}
+@-webkit-keyframes float4 {
+    0%{ height:10px;  width:10px;  top:660px;  opacity: 0;  transform: rotate(0deg); }
+    25%{  opacity: 0.6;  }
+    100%{ height:60px;  width:60px;  top:0px;  opacity: 0;  transform: rotate(330deg);
+    }
+
+}
+.block6{  background: white;  position: absolute;  height:10px;  width:10px;  left:300px;
+    top:700px;  animation: float6 15s;  opacity: 0;  transform: rotate(0deg);
+    animation-iteration-count: infinite;text-align: center;
+}
+@-webkit-keyframes float6 {
+    0%{ height:10px; width:10px;  top:665px;  opacity: 0;  transform: rotate(0deg); }
+    25%{  opacity: 0.75;  }
+    100%{ height:60px;  width:60px;  top:0px;  opacity: 0;  transform: rotate(330deg); }
+
+}
+
+
+.block2{
+    background: white;  position: absolute;  height:10px;  width:10px;  left:60px;  top:700px;
+    animation: float2 15s;  opacity: 0;  animation-delay: 6.8s;  transform: rotate(0deg);
+    animation-iteration-count: infinite;text-align: center;
+}
+@-webkit-keyframes float2 {
+    0%{ height:10px;  width:10px;  top:600px;  opacity: 0;  transform: rotate(0deg);  }
+    25%{  opacity: 0.5;  }
+    100%{ height:60px;  width:60px;  top:0px;  opacity: 0;  transform: rotate(330deg);  }
+}
+.block5{
+    background: white;  position: absolute;  height:10px;  width:10px;  left:130px;  top:700px;
+    animation: float5 15s;  animation-delay: 7.5s;  opacity: 0;  transform: rotate(0deg);
+    animation-iteration-count: infinite;text-align: center;
+}
+@-webkit-keyframes float5 {
+    0%{ height:10px;  width:10px;  top:640px;  opacity: 0;  transform: rotate(0deg);  }
+    25%{  opacity: 0.8;  }
+    100%{ height:60px;  width:60px;  top:0px;  opacity: 0;  transform: rotate(310deg);  }
+}
+.block7{  background: white;  position: absolute;  height:10px;
+    width:10px;  left:220px;  top:600px;  animation: float7 15s;  animation-delay: 6s;
+    opacity: 0;  transform: rotate(0deg);  animation-iteration-count: infinite;text-align: center;
+}
+@-webkit-keyframes float7 {
+    0%{ height:10px;  width:10px;  top:600px;  opacity: 0;  transform: rotate(0deg);  }
+    25%{  opacity: 0.8;  }
+    100%{ height:60px;  width:60px;  top:0px;  opacity: 0;  transform: rotate(330deg);  }
+}
+.block8{
+    background: white;  position: absolute;  height:10px;  width:10px;  left:300px;
+    top:720px;  animation: float8 15s;  animation-delay: 8s;  opacity: 0;  transform: rotate(0deg);
+    animation-iteration-count: infinite;text-align: center;
+}
+@-webkit-keyframes float8 {
+    0%{ height:10px;  width:10px;  top:520px;  opacity: 0;  transform: rotate(0deg);  }
+    25%{  opacity: 0.7; }
+    100%{ height:60px;  width:60px;  top:0px;  opacity: 0;  transform: rotate(330deg);  }
+}
+.bigone{  width:80px;  height:150px;  margin:0px auto 0px;  margin-top:160px;animation: divstop 5s;}
+
+@-webkit-keyframes divmove { from{margin-top:160px ;opacity:1} to{margin-top:520px ;} }
+@-webkit-keyframes outmove { from{margin-top:520px  ;opacity:1} to{margin-top:160px ;} }
+.left{
+    opacity: 0;  padding-top:20px;  text-align: center;  line-height: 35px;  font-size: 20px;
+    position: absolute;  left:15px;  top:40px;  height:240px;  width:160px;
+    background: lightgoldenrodyellow;  animation: left 5s;
+    box-shadow: -5px 5px #f9f9f9;
+}
+@-webkit-keyframes left1 { from {   opacity: 0} to { opacity:1} }
+@-webkit-keyframes left2 { from {   opacity: 1} to { opacity:0} }
+.right{  opacity: 0;  padding-top:20px;  text-align: center;  line-height: 30px;
+    font-size: 20px;  position: absolute;  right:15px;  top:40px;  height:240px;
+    width:160px;  background: lightgoldenrodyellow;  animation: right 5s;
+    box-shadow: 5px 5px #f9f9f9;
+}
+@-webkit-keyframes right1 { from {   opacity: 0} to { opacity:1} }
+@-webkit-keyframes right2 { from {   opacity: 1} to { opacity:0} }
+.word1{opacity: 0;animation: word 1.0s;animation-fill-mode: forwards;  }
+@-webkit-keyframes word1 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word2{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards;animation-delay: 1.2s  }
+@-webkit-keyframes word2 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word3{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards; animation-delay: 2.4s }
+@-webkit-keyframes word3 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word4{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards; animation-delay: 3.6s }
+@-webkit-keyframes word4 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word5{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards;  animation-delay: 4.8s}
+@-webkit-keyframes word5 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word6{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards;  animation-delay: 6.0s}
+@-webkit-keyframes word6 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word7{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards;  animation-delay: 7.2s}
+@-webkit-keyframes word7 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word8{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards;  animation-delay: 8.4s}
+@-webkit-keyframes word8 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word9{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards;  animation-delay: 9.6s}
+@-webkit-keyframes word9 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word10{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards; animation-delay: 10.8s }
+@-webkit-keyframes word10 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word11{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards;  animation-delay: 12s}
+@-webkit-keyframes word11 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+.word12{opacity: 0;animation: word 1.2s;animation-fill-mode: forwards;  animation-delay: 13.2s}
+@-webkit-keyframes word12 { 0%{opacity:0} 25%{opacity: 0.2} 66%{opacity: 0.7} 100%{opacity: 1} }
+
+.out_div{  opacity: 0;  position: absolute;  width:360px;  height:450px;margin-top:-10px;  margin-left:-10px;
+    background: lightpink;  border:1px solid lightpink;  animation:out 2s;
+
+}
+@-webkit-keyframes out1 { from{opacity: 0} to{opacity: 1} }
+#canvas{  position:absolute;  left:5px;  top:30px;  }
+.audio_div{  text-align: center;  position: absolute;  left:20px;  top:380px;  }
+.happy{  width:350px;  text-align: center;  font-size: 30px;  opacity: 0;  animation: appear 3s;  color:red; font-style: italic }
+.name{font-style: inherit;font-size: 24px;color: deepskyblue;background: white;width:80px;height:30px;margin-left:27px;}
+@-webkit-keyframes appear1  { from{opacity:0} to {opacity: 1} }
+.cake4{
+    opacity: 0;
+}
+#cake41{
+    opacity: 1;
+}
+.cakediv423{
+    position: absolute;
+    top: 95.5px;
+    left:247px;
+    width:90px;
+    height:90px;
+    z-index: 9;
+    opacity: 0.4;
+    animation: cakemove1  5s;
+}
+@-webkit-keyframes cakemove1 {
+    from{
+        opacity:0.4;
+        top:95.5px;
+    }to{
+    opacity:1;
+    top:520px;
+         }
+}
+.cake423{
+    z-index: 9;
+    width:90px;
+    height:90px;
+    border-radius: 45px;
+}
+
+.speak{
+margin-top:0px;
+    width:200px;
+    text-align: center;
+    background: lightyellow;
+    box-shadow: 3px 3px #999999;
+   margin-left:20px;
+    height:100px;
+    opacity:0;
+   animation: speakapp 3s;
+    animation-fill-mode:forwards;
+}
+@-webkit-keyframes speakapp1 {
+    from{opacity: 0;margin-top:0px}
+    to{opacity: 1;margin-top:520px}
+}.speak1{
+padding-top:4px;
+     width:100%;
+     text-align: center;
+
+ }
+.speak2{
+    padding-top:4px;
+    width:100%;
+    text-align: center;
+
+}
+.end{
+    margin-top:7px;
+    width:45px;
+    color:deeppink;
+    background: white;
+    border-radius: 10px;
+    height:30px;
+    margin-left:75px;
+}
+a{
+    text-decoration: none;
+    color:deeppink;
+}
